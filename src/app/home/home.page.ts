@@ -11,8 +11,12 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 export class HomePage {
 
   public num: number;
+  public MAX: number;
+  public MIN: number;
 
   constructor() {
     this.num = 0;
+    this.MAX = 9999;
+    this.MIN = 0;
   }
 }
