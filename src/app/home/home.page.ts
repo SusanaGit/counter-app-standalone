@@ -19,4 +19,12 @@ export class HomePage {
     this.MAX = 9999;
     this.MIN = 0;
   }
+
+  up() {
+
+  }
+
+  down() {
+
+  }
 }
