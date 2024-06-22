@@ -21,10 +21,14 @@ export class HomePage {
   }
 
   up() {
-
+    if (this.num < this.MAX) {
+      this.num++;
+    }
   }
 
   down() {
-
+    if (this.num < this.MIN) {
+      this.num--;
+    }
   }
 }
