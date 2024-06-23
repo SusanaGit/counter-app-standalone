@@ -43,6 +43,11 @@ export class HomePage {
   }
 
   async ionViewWillEnter() {
+
+    const counter = await Preferences.get({
+      key: this.KEY_NUMBER
+    })
+
   }
 
   up() {
