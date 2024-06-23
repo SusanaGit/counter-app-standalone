@@ -21,9 +21,7 @@ import {AlertController} from "@ionic/angular";
   standalone: true,
   imports: [IonHeader, IonContent, IonFooter, IonButton, IonIcon, IonCol, IonRow, IonGrid, IonText],
 
-  providers: [
-    AlertController
-  ]
+  providers: [AlertController]
 })
 export class HomePage {
 
@@ -31,15 +29,12 @@ export class HomePage {
   public MAX: number;
   public MIN: number;
 
-  constructor() {
+  constructor(private alertController: AlertController) {
     this.num = 0;
     this.MAX = 9999;
     this.MIN = 0;
 
-    addIcons({
-      caretUpCircleOutline,
-      caretDownCircleOutline
-    })
+    addIcons({caretUpCircleOutline, caretDownCircleOutline})
   }
 
   up() {
