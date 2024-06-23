@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {IonHeader, IonContent, IonFooter, IonButton, IonIcon} from '@ionic/angular/standalone';
 import {addIcons} from "ionicons";
-import {caretUpCircleOutline} from "ionicons/icons";
+import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
 
 @Component({
   selector: 'app-home',
@@ -22,7 +22,8 @@ export class HomePage {
     this.MIN = 0;
 
     addIcons({
-      caretUpCircleOutline
+      caretUpCircleOutline,
+      caretDownCircleOutline
     })
   }
 

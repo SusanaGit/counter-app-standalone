@@ -6,4 +6,8 @@
 
 <ion-content></ion-content>
 
-<ion-footer></ion-footer>
+<ion-footer>
+  <ion-button expand="block" (click)="down()" [disabled]="num===MAX">
+    <ion-icon name="caret-down-circle-outline"></ion-icon>
+  </ion-button>
+</ion-footer>
