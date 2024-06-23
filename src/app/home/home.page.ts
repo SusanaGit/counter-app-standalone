@@ -54,6 +54,8 @@ export class HomePage {
       if (isNaN(num) || num < this.MIN || num > this.MAX) {
         this.num = this.MIN;
         this.saveNum();
+      } else {
+        this.num = num;
       }
     }
 
