@@ -46,7 +46,11 @@ export class HomePage {
 
     const counter = await Preferences.get({
       key: this.KEY_NUMBER
-    })
+    });
+
+    if (counter.value) {
+      const num = +counter.value;
+    }
 
   }
 
