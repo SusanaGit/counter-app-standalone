@@ -48,4 +48,8 @@ export class HomePage {
       this.num--;
     }
   }
+
+  reset() {
+
+  }
 }
