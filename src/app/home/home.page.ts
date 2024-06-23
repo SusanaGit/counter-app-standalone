@@ -8,11 +8,11 @@ import {
   IonCol,
   IonRow,
   IonGrid,
-  IonText
+  IonText,
+  AlertController
 } from '@ionic/angular/standalone';
 import {addIcons} from 'ionicons';
 import {caretUpCircleOutline, caretDownCircleOutline} from 'ionicons/icons';
-import {AlertController} from '@ionic/angular';
 import {Preferences} from '@capacitor/preferences'
 
 @Component({
