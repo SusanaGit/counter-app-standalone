@@ -51,7 +51,16 @@ export class HomePage {
 
   async reset() {
     const alert = await this.alertController.create({
-
+      header: 'Confirmación',
+      message: '¿Quieres resetear el contador?',
+      buttons: [
+        {
+          text: 'Si'
+        },
+        {
+          text: 'No'
+        }
+      ]
     });
 
     await alert.present();
