@@ -70,4 +70,10 @@ export class HomePage {
 
     await alert.present();
   }
+
+  private saveNum() {
+    Preferences.set({
+      key: , value: this.num.toString()
+    })
+  }
 }
