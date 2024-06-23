@@ -49,7 +49,11 @@ export class HomePage {
     }
   }
 
-  reset() {
+  async reset() {
+    const alert = await this.alertController.create({
 
+    });
+
+    await alert.present();
   }
 }
