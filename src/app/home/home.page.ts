@@ -55,10 +55,14 @@ export class HomePage {
       message: '¿Quieres resetear el contador?',
       buttons: [
         {
-          text: 'Si'
+          text: 'Si',
+          handler: () => {
+            this.num=0;
+          }
         },
         {
-          text: 'No'
+          text: 'No',
+          role: 'cancel'
         }
       ]
     });
