@@ -42,6 +42,9 @@ export class HomePage {
     addIcons({caretUpCircleOutline, caretDownCircleOutline})
   }
 
+  async ionViewWillEnter() {
+  }
+
   up() {
     if (this.num < this.MAX) {
       this.num++;
