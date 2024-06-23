@@ -5,3 +5,7 @@
   justify-content: center;
   font-size: 35vw;
 }
+
+.no-scroll {
+  --overflow: hidden;
+}
