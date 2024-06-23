@@ -12,6 +12,7 @@ import {
 } from '@ionic/angular/standalone';
 import {addIcons} from "ionicons";
 import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
+import {AlertController} from "@ionic/angular";
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,10 @@ import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [IonHeader, IonContent, IonFooter, IonButton, IonIcon, IonCol, IonRow, IonGrid, IonText],
+
+  providers: [
+    AlertController
+  ]
 })
 export class HomePage {
 
