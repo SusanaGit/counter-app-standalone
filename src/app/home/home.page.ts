@@ -1,5 +1,15 @@
 import { Component } from '@angular/core';
-import {IonHeader, IonContent, IonFooter, IonButton, IonIcon, IonCol, IonRow, IonGrid} from '@ionic/angular/standalone';
+import {
+  IonHeader,
+  IonContent,
+  IonFooter,
+  IonButton,
+  IonIcon,
+  IonCol,
+  IonRow,
+  IonGrid,
+  IonText
+} from '@ionic/angular/standalone';
 import {addIcons} from "ionicons";
 import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
 
@@ -8,7 +18,7 @@ import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonContent, IonFooter, IonButton, IonIcon, IonCol, IonRow, IonGrid],
+  imports: [IonHeader, IonContent, IonFooter, IonButton, IonIcon, IonCol, IonRow, IonGrid, IonText],
 })
 export class HomePage {
 
