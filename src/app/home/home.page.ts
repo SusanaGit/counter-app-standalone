@@ -30,10 +30,14 @@ export class HomePage {
   public MAX: number;
   public MIN: number;
 
+  private KEY_NUMBER: string;
+
   constructor(private alertController: AlertController) {
     this.num = 0;
     this.MAX = 9999;
     this.MIN = 0;
+
+    this.KEY_NUMBER = 'key_number';
 
     addIcons({caretUpCircleOutline, caretDownCircleOutline})
   }
@@ -73,7 +77,7 @@ export class HomePage {
 
   private saveNum() {
     Preferences.set({
-      key: , value: this.num.toString()
+      key: this.KEY_NUMBER, value: this.num.toString()
     })
   }
 }
