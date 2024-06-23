@@ -50,6 +50,11 @@ export class HomePage {
 
     if (counter.value) {
       const num = +counter.value;
+
+      if (isNaN(num) || num < this.MIN || num > this.MAX) {
+        this.num = this.MIN;
+        this.saveNum();
+      }
     }
 
   }
