@@ -45,12 +45,14 @@ export class HomePage {
   up() {
     if (this.num < this.MAX) {
       this.num++;
+      this.saveNum();
     }
   }
 
   down() {
     if (this.num > this.MIN) {
       this.num--;
+      this.saveNum();
     }
   }
 
@@ -63,6 +65,7 @@ export class HomePage {
           text: 'Si',
           handler: () => {
             this.num=0;
+            this.saveNum();
           }
         },
         {
