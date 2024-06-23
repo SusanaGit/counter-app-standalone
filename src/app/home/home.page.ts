@@ -10,9 +10,10 @@ import {
   IonGrid,
   IonText
 } from '@ionic/angular/standalone';
-import {addIcons} from "ionicons";
-import {caretUpCircleOutline, caretDownCircleOutline} from "ionicons/icons";
-import {AlertController} from "@ionic/angular";
+import {addIcons} from 'ionicons';
+import {caretUpCircleOutline, caretDownCircleOutline} from 'ionicons/icons';
+import {AlertController} from '@ionic/angular';
+import {Preferences} from '@capacitor/preferences'
 
 @Component({
   selector: 'app-home',
