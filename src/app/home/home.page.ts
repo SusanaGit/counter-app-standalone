@@ -44,7 +44,7 @@ export class HomePage {
   }
 
   down() {
-    if (this.num < this.MIN) {
+    if (this.num > this.MIN) {
       this.num--;
     }
   }
